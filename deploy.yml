@@ -1,0 +1,35 @@
+
+name: Deploy WordPress to VPS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: |
+          # Add commands to install dependencies
+          # e.g., npm install
+
+      - name: Build project
+        run: |
+          # Add commands to build the project
+          # e.g., npm run build
+
+      - name: Transfer files to VPS
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.wordpress.myftp.org }}
+          username: ${{ secrets.root }}
+          key: ${{ secrets.ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCpUefTfmWRD5YHE+trjACADU1GANA0trKl7qriRfNWi0bNuj3ucCPI7AGnq+MiY4Z8ZWwhXyfEtCKbp4MR1Wszb+rXTFo5a6wjFvYdYf4vqphvKi2G95uslGXE72t2aQsVtThPN7YBzgzi+nZp79RUYpOPfI8iXLkEGXgM00x+3Wvda8Yj48vrwty9LNGAsfN9D974C1Lv5YV0H6MhevpHEaEyQ8VWVGtdLiztWMef1N0jc/OgaFOyaa5ZZWkP4uyp5MPRqOoOis0sVXDWkUJRrbp2xbu7d4X1rULdD+Eg2Duzl7ht6Wz6Gny0cxWBRRV+ZFXyUUhyRApWi6A3gj0YDasCvnziE6ablzBqUwxZAUtaqpccKEawr7rFYADgiGT/ikhOs6SwQgIs9FlqMz6CUC/AaJPHjg63vRCfHIlc3zTczyoklGpnwB8kUfYDaS2C6Knyc43+ZFFwNrUtLI/uilkpqsMkbpdsXY/BDsQs9WWnaGeOF6s3Qp5P6Dlx9R2uzZ3lkM0nGRpKKe14KiMh4i89FKWav1AzyiGYOVpK3WpqOi/mTmUScx7RAAGLGNBH2dkqjDKdxdOsUyyYoRAGchCnPeukMfC8hWltsc8M4QYKms96wteFZibMn3rXWItO14+u47unehLz4iMI+lEqW/Ba8bmG5Cpy2KIArcTXNw== nileshsuryawanshi65@gmail.com}}
+          port: ${{ secrets.VPS_PORT }}
+          source: "https://github.com/nileshsurya1994/wordpress.git"
+          target: "/var/www/html/wordpress"
