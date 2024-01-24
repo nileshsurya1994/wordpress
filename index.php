@@ -3,7 +3,8 @@
 
 /**
  * Tells WordPress to load the WordPress theme and output it.
- *
+ * 
+ * Hi every one This is Nilesh 
  * @var bool
  */
 define( 'WP_USE_THEMES', true );
