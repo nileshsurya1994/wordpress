@@ -31,8 +31,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             sudo apt-get -y update
-            sudo apt-get install -y nginx
-            sudo systemctl start nginx
+            sudo systemctl restart nginx
             sudo systemctl enable nginx
             cd home
             sudo mv * /var/www/html
