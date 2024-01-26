@@ -21,20 +21,6 @@
 
 
 
-#define( 'DB_NAME', 'wordpress' );
-
-/** Database username */
-#define( 'DB_USER', 'wordpressuser' );
-
-/** Database password */
-#define( 'DB_PASSWORD', 'supp0rt$ESDS' );
-
-/** Database hostname */
-#define( 'DB_HOST', 'localhost' );
-
-
-
-
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define( 'DB_NAME', 'wordpress' );
