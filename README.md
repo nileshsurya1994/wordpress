@@ -5,9 +5,9 @@
 2.	GitHub Account: https://github.com
 3.	Site Domain name: https://www.noip.com/login
 
-## EC2 Instance(VM): Ubuntu 22.04  
-Domain Name: wordpress.myftp.org (https://wordpress.myftp.org/)
-GitHub Repository: https://github.com/nileshsurya1994/wordpress.git
+### EC2 Instance(VM): Ubuntu 22.04  
+### Domain Name: wordpress.myftp.org (https://wordpress.myftp.org/)
+### GitHub Repository: https://github.com/nileshsurya1994/wordpress.git
 
 
 ## Server Packages:
@@ -30,27 +30,33 @@ Before proceeding, ensure you have the following prerequisites in place:
 
 ## Server Provisioning 
 
-### Step 1: Install LEMP Server
-' sudo apt install nginx mysql-server php-fpm php-mysql '
+ **Step 1: Install LEMP Server**
+' _sudo apt install nginx mysql-server php-fpm php-mysql_ '
 
-### Step 2: Configure MySQL for WordPress
+**Step 2: Configure MySQL for WordPress**
 
-### Step 3: Download and Configure WordPress
+**Step 3: Download and Configure WordPress**
 
-### Step 4: Configure Nginx
+**Step 4: Configure Nginx**
 
 
 ## Website Configuration 
-### Step 1: Install WordPress
-### Step 2: Secure WordPress
-### Step 3: Implement SSL/TLS with Let's Encrypt
-   Sign Up to the Website https://www.noip.com/login
-### Step 4: Optimize Nginx Configuration
+**Step 1: Install WordPress**
+
+**Step 2: Secure WordPress**
+
+**Step 3: Implement SSL/TLS with Let's Encrypt**
+   _Sign Up to the Website https://www.noip.com/login_
+
+**Step 4: Optimize Nginx Configuration**
 
 
 ## Git Repository Setup
-### Step 1: Create a GitHub Repository
+**Step 1: Create a GitHub Repository**
    Go to GitHub (https://github.com/) and log in to your account.
-### Step 2: Configure GitHub Actions Workflow
-### Step 3: Set Up Secrets
-### Step 4: Commit and Push# wordpress
+
+**Step 2: Configure GitHub Actions Workflow**
+
+**Step 3: Set Up Secrets**
+
+**Step 4: Commit and Push# wordpress**
